@@ -1,0 +1,63 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="8dp"
+    android:background="?attr/selectableItemBackground">
+
+    <!-- Imagen del producto -->
+    <ImageView
+        android:id="@+id/groceryItemImage"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:scaleType="centerCrop"
+        android:contentDescription="Product Image"
+        android:src="@drawable/ic_grocery_item_placeholder" />
+
+    <!-- Información del producto -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingStart="8dp">
+
+        <TextView
+            android:id="@+id/groceryItemName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Product Name"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="@color/primaryTextColor" />
+
+        <TextView
+            android:id="@+id/groceryItemStore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Store Name"
+            android:textSize="14sp"
+            android:textColor="@color/secondaryTextColor" />
+
+        <TextView
+            android:id="@+id/groceryItemPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$0.00"
+            android:textSize="14sp"
+            android:textColor="@color/secondaryTextColor" />
+    </LinearLayout>
+
+    <!-- Botón para eliminar el producto -->
+    <ImageButton
+        android:id="@+id/deleteButton"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:padding="4dp"
+        android:src="@drawable/ic_delete"
+        android:background="@drawable/rounded_white_background"
+        android:contentDescription="Delete Item"
+        android:scaleType="centerInside" />
+
+</LinearLayout>

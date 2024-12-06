@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/backgroundColor">
+
+    <!-- Botón de regreso -->
+    <ImageButton
+        android:id="@+id/backButton"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_back_arrow"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="Back to Menu"
+        android:layout_gravity="start"
+        android:layout_marginBottom="16dp"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true" />
+
+    <!-- Filtros de productos -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:paddingBottom="8dp">
+
+        <Button
+            android:id="@+id/filterRecommended"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Recommended"
+            android:background="@drawable/filter_button_background"
+            android:textColor="@color/secondaryTextColor"
+            android:padding="8dp" />
+
+        <Button
+            android:id="@+id/filterLowestPrice"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Lowest Price"
+            android:background="@drawable/filter_button_background"
+            android:textColor="@color/secondaryTextColor"
+            android:padding="8dp" />
+
+        <Button
+            android:id="@+id/filterBestPricePerOunce"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Best Price/Ounce"
+            android:background="@drawable/filter_button_background"
+            android:textColor="@color/secondaryTextColor"
+            android:padding="8dp" />
+
+    </LinearLayout>
+
+    <!-- Lista de productos -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/productRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/listBackgroundColor" />
+
+</LinearLayout>

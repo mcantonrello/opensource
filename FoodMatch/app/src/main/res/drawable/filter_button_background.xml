@@ -1,0 +1,18 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Fondo para el estado seleccionado -->
+    <item android:state_selected="true">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/primaryLightColor" />
+            <corners android:radius="8dp" />
+        </shape>
+    </item>
+
+    <!-- Fondo predeterminado -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@android:color/transparent" />
+            <corners android:radius="8dp" />
+            <stroke android:width="1dp" android:color="@color/primaryTextColor" />
+        </shape>
+    </item>
+</selector>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Botón de retroceso -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <ImageButton
+            android:id="@+id/backButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_back_arrow"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Back to Grocery List"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Supermarket Products"
+            android:textSize="24sp"
+            android:textColor="@color/primaryTextColor"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:paddingStart="8dp" />
+    </LinearLayout>
+
+    <!-- Botones para los supermercados -->
+    <Button
+        android:id="@+id/buttonAldi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Aldi" />
+
+    <Button
+        android:id="@+id/buttonCostco"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Costco" />
+
+    <Button
+        android:id="@+id/buttonWholeFoods"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Whole Foods" />
+
+    <Button
+        android:id="@+id/buttonTarget"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Target" />
+
+    <Button
+        android:id="@+id/buttonTraderJoes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Trader Joe's" />
+
+    <Button
+        android:id="@+id/buttonWalmart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Walmart" />
+
+    <!-- ListView para mostrar los productos -->
+    <ListView
+        android:id="@+id/groceryListView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+</LinearLayout>
